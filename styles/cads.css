@@ -1,0 +1,268 @@
+/* html{
+    background-color:#111;
+    margin: 0;
+    padding:0;
+    font-size:30px;
+    box-sizing: border-box;
+}
+h2{
+    font-family: ZCOOL QingKe HuangYou;
+}
+p{
+    font-family:monserrat;
+}
+.container{
+    position: relative;
+}
+.cards{
+   
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+    justify-content: center;
+   max-width: 90%;
+   margin: auto;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    position: relative;
+    
+}
+
+
+
+.first , .second , .last {
+    color:rgb(222, 213, 213);
+    width:500px;
+    height: 700px;
+    background-color: rgba(0,0,0,0.3);
+    transition:0.5s;
+    position: relative;
+    
+    
+    
+   
+}
+.first , .second ,  .last h2{
+    text-align: center;
+}
+.first , .second , .last  p{
+    padding:0 1rem 0 1rem;
+}
+
+.last{
+    padding:0 1rem 0 1rem; 
+    
+}
+.first::before {
+
+    position:absolute;
+    content:"";
+    top: 0rem;
+    bottom:0rem;
+    left:-1rem;
+    right:0rem;
+    width:110%;
+    height:110%;
+    background: linear-gradient(45deg, rgba(255,226,0,1) 0%, rgba(255,38,0,1) 100%); 
+z-index: -1;
+margin: auto;
+
+
+}
+.first::after{
+    position:absolute;
+    content:"";
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(45deg, rgba(255,226,0,1) 0%, rgba(255,38,0,1) 100%); 
+    filter: blur(30px);
+    z-index: -1;
+   
+  
+}
+
+
+.first:hover{
+    color: black;
+    transform: translateY(-30px);
+    background-color: rgba(0,0,0,0.3);
+    
+  
+}
+.second:hover{
+    transform: translateY(-30px);
+    background-color: rgba(0,0,0,0.3);
+    
+}
+.last:hover{
+    transform: translateY(-30px);
+    background-color: rgba(0,0,0,0.3);
+   
+}
+
+.first{
+    background-color: rgba(0,0,0,0.3);
+} */
+
+html{
+    background: #111;
+    margin: 0;
+    padding:0;
+    font-size:30px;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+font-family: ZCOOL QingKe HuangYou;
+font-size: 2rem;
+align-items: center;
+width: 100%;
+
+}
+
+
+p{
+font-family:monserrat;
+font-size: 1.5rem;
+padding-right: 1rem;
+padding-left: 1rem;
+text-align: center;
+align-self: center;
+padding-bottom: 1rem;
+
+}
+hr{
+    size: 10px;
+   margin: 1.5rem  0.55rem 0 0.55rem;
+}
+a{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+        color: black;
+
+        
+    background-color: #fff;
+    position: relative;
+   margin-bottom:1.5rem;
+   width:50%;
+   border-radius: 1rem;
+    
+}
+body{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+  .box{
+      display: flex;
+      position: relative;
+      gap:2.5rem;
+      flex-wrap:wrap;
+      margin: 0 10% ;
+      align-items: center;
+      transition:0.5s;
+      justify-content:center;
+      
+  }
+
+  .content{
+      color:white;
+      position:relative;
+      width:500px;
+      height:700px;
+      background: #111;
+      align-items: center; 
+      transition:0.5s;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .container{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      transition:0.5s;
+  }
+
+  .content:hover{
+      transform:translateY(-30px)
+  }
+  .content::before{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      top: 0;
+      bottom:0;
+      background: linear-gradient(45deg, #ffbc00 0%, #ff0058 100%); 
+      z-index: -2;
+    }
+      
+  
+  .content::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      top: 0;
+      bottom:0;
+      background: linear-gradient(135deg, rgba(255,226,0,1) 0%, rgba(255,38,0,1) 100%); 
+      filter:blur(30px);
+      z-index: -2;
+  }
+
+  .content:nth-child(1)::before,
+  .content:nth-child(1)::after{
+
+    background: linear-gradient(225deg, #03a9f4 0%, #ff0058);
+  }
+
+  .content:nth-child(3)::before,
+  .content:nth-child(3)::after{
+   
+   
+   
+background: linear-gradient(225deg, #4dff03 0%, #00d0ff 100%);
+
+}
+ span{
+    position:absolute;
+    bottom:15px;
+    top:15px;
+    left: 15px;
+    right:15px;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;}
+
+    span::before{
+        content:" ";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        left:0;
+        width:50%;
+        height: 100%;
+        background:rgba(255,255,255,0.1);
+       
+    }
+
+    .content {
+        position:relative;
+        z-index: 10;
+    }
+
+    

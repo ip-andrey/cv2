@@ -1,0 +1,130 @@
+html{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-size:40px;
+    font-family: ZCOOL QingKe HuangYou;
+    letter-spacing: 3px;
+   
+}
+body{
+    background:#111;
+    display: grid;
+    justify-content: center;
+     align-items: center;
+    height:100vh;   
+}
+
+form{
+  border:5px solid cyan;
+    display:grid;
+    border-radius:21px;
+    position:relative;
+    width:60vw;
+    height:70vh;
+    grid-template-rows: repeat(4 ,1fr);
+    margin: 0 auto;
+    
+    align-items: center;
+}
+form::after{
+    position: absolute;
+   content:" ";
+   top: 0;
+   right:0;
+   bottom:0;
+   left:0;
+   border:10px solid cyan;
+  filter:blur(20px);
+   border-radius:21px;
+   z-index: -1;
+  
+   
+  
+
+}
+form div{
+    display:grid;
+    justify-content:center;
+   
+}
+input{
+    letter-spacing: 4px;
+    font-family:inherit;
+    background: none;
+    border:5px solid cyan;
+    border-style:none none  solid none;
+    
+    color:rgb(0, 195, 195);
+    font-size: 1rem;
+    padding:.7rem;
+    margin:1rem;
+    width:30vw;
+    text-align: center;
+transition:all .3s
+}
+::placeholder{
+    font-family: monserrat;
+    color:rgb(0, 195, 195);
+    text-align: center;
+    font-size:inherit
+}
+
+ input:hover {
+  
+    outline:none;
+    border-color:  cyan;
+    transform:scale(1.2,1.2)
+  
+}
+
+input:focus  {
+    border-color:cyan;
+    transform:scale(1.2,1.2);
+    outline:none;
+    color:aliceblue;
+}
+input:not(:placeholder-shown)  {
+    border-color:#09ff00e1;
+   color:#09ff00e1;
+    outline:none;
+}
+
+button {
+    letter-spacing: 2px;
+    font-family:monserrat;
+    width:15vw;
+    height:7vh;
+    border-radius:24px;
+    background-color:transparent;
+    border:3px solid cyan;
+    color :cyan;
+    font-size: 1rem;
+    transition:all 0.3s;
+
+}
+
+button:hover{
+    transform:scale(1.2,1.2)
+}
+button:hover{
+    border-color:#09ff00e1;
+   color:#09ff00e1;transform:scale(1.2,1.2);
+}
+.refs{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width:60vw;
+    
+}
+a{
+    font-family: monserrat;
+    padding:2rem;
+    text-decoration:none;
+    color: cyan;
+    transition:.3s;
+}
+
+a:hover{  border-color:#09ff00e1;
+    color:#09ff00e1;transform:scale(1.2,1.2);}
